@@ -1,0 +1,36 @@
+.loginCtrl {
+  font-family: myDemi;
+  color: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  &__text {
+    display: flex;
+    position: fixed;
+    background: white;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    h3 {
+      margin: 20px 10px;
+    }
+    button {
+      height: 36px;
+      border-radius: 18px;
+      color: #3899ec;
+      background-color: transparent;
+      border-color: #3899ec;
+      margin: 15px 10px;
+    }
+    img {
+      margin: 10px 10px;
+    }
+  }
+}

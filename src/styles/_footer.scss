@@ -1,0 +1,125 @@
+.footer {
+  background-color: #323232;
+  color: white;
+  padding: 40px 0px;
+
+  &__myfooter {
+    &--title {
+      margin: 0px 16px 24px 16px;
+    }
+    &--images {
+      display: flex;
+      margin: 16px;
+      justify-content: space-between;
+      width: 37%;
+    }
+  }
+
+  &__text {
+    margin: 32px 16px 24px 16px;
+    font-size: 0.9em;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #thick {
+      font-family: myDemi;
+      margin: 1em 0em;
+    }
+    #slim {
+      margin: 1em 0em;
+    }
+  }
+  .copyright {
+    margin: 32px 16px 24px 12px;
+    width: 67%;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__myfooter--logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 0px 0px 40px 0px;
+    &__myfooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      &--title {
+        display: none;
+      }
+      &--images {
+        padding-right: 81px;
+        width: 124px;
+        margin: 0px;
+      }
+      &--logo {
+        img {
+          justify-self: flex-end;
+          margin-top: 0px;
+          padding: 20px 0px 0px 12px;
+          height: 6vw;
+          margin-left: auto;
+        }
+      }
+    }
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      margin: 24px;
+    }
+    .copyright {
+      margin: 24px;
+      width: 69%;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    &__myfooter {
+      margin: 0px 160px;
+      &--logo {
+        img {
+          height: 6vw;
+        }
+      }
+      &--images {
+        width: 17%;
+
+        img {
+          margin-left: 16px;
+        }
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      width: 53%;
+      margin: 32px 180px 24px 180px;
+
+      #thick {
+        margin: 16px 0px;
+      }
+      #slim {
+        margin: 16px 0px 16px 0px;
+      }
+    }
+    .copyright {
+      margin: 24px 0px 0px 180px;
+      width: 69%;
+    }
+  }
+}

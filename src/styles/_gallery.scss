@@ -1,0 +1,104 @@
+.masonry-wrapper {
+  text-align: center;
+
+  .masonry {
+    #profile {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0px;
+    }
+    &__profile {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 16px;
+      h4 {
+        margin: 10px;
+      }
+    }
+    &__image {
+      &--likes {
+        display: none;
+      }
+      &--profile {
+        display: none;
+      }
+    }
+    &__image {
+      position: relative;
+      &--imageLink:hover + .masonry__image--likes,
+      .masonry__image--likes:hover {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #777;
+        fill: currentColor;
+        background-color: hsla(0, 0%, 100%, 0.85);
+        border-radius: 5px;
+        padding: 10px;
+        width: 23%;
+        height: 10px;
+        #likes {
+          width: 25px;
+          height: 25px;
+          padding: 0px 10px 0px 0px;
+        }
+        h4 {
+          margin: 0px;
+        }
+      }
+    }
+  }
+  #image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .masonry-wrapper {
+    margin: 0px 24px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    .masonry {
+      width: 33%;
+      &__profile {
+        display: none;
+      }
+      #image {
+        width: 97%;
+        height: 230px;
+        margin: 5px;
+        object-fit: cover;
+      }
+      &__image {
+        position: relative;
+        &--imageLink:hover ~ .masonry__image--profile,
+        .masonry__image--profile:hover {
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+          bottom: 10px;
+          left: 8px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.1);
+          h4 {
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .masonry-wrapper {
+    margin: 0px 180px;
+  }
+}

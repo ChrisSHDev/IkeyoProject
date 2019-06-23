@@ -1,0 +1,89 @@
+.header {
+  font-family: -webkit-body;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 16px;
+  &__logo {
+    img {
+      height: 60px;
+    }
+    img:hover {
+      background: #ffe58e;
+      width: 63px;
+      height: 63px;
+      border-radius: 100px;
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  }
+  &__right {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    #save {
+      width: 20px;
+      height: 20px;
+      padding: 14.5px 6px 0px 5px;
+    }
+    #login {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+    }
+
+    &--sub {
+      padding: 16px 4px 6px 4px;
+      text-align: center;
+      a {
+        font-family: myDemi;
+        text-decoration: none;
+        color: #afafaf;
+      }
+    }
+    &--sub:hover {
+      border-bottom: solid pink;
+    }
+    &--login {
+      padding-top: 5px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #home {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 16px 24px;
+    &__logo {
+      height: 68px;
+    }
+    &__right {
+      font-size: 18px;
+      #save {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+      }
+      #login {
+        border: #aeaeae 1px solid;
+      }
+      &--sub {
+        margin: 0px 6px;
+        a {
+          margin: 0px 6px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    margin: 24px 190px;
+  }
+}

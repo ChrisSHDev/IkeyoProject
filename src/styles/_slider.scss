@@ -1,0 +1,60 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  h3 {
+    font-family: myMedium;
+    padding: 0px 16px;
+    color: #ffc20e;
+    font-size: 17px;
+  }
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    &--slide {
+      display: inline-block;
+      height: 80%;
+      width: 100%;
+      animation-name: fade;
+      animation-duration: 1.5s;
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    width: 91%;
+    margin-bottom: 24px;
+    h3 {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider {
+    width: 74%;
+    h3 {
+      font-size: 25px;
+    }
+  }
+}
