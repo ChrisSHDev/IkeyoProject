@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Gallery from "../components/Gallery";
 import axios from "axios";
 
-const photoUrl = `http://localhost:8001/photos`;
+const photoUrl = `https://radiant-escarpment-93698.herokuapp.com/photos`;
 
 export default class Saved extends Component {
   state = {
@@ -72,7 +72,7 @@ export default class Saved extends Component {
   };
 
   render() {
-    console.log(this.state.photos[0]);
+    console.log(this.state.filtered[0]);
     return (
       <div className="masonry-wrapper">
         {this.state.filtered.map(photo => (
