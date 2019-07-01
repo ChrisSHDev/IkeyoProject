@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Login from "../assets/images/login.jpg";
+import Login from "../assets/images/profile.png";
 
 const LoginCtrl = ({ show, onClose }) => {
   {
@@ -11,7 +11,7 @@ const LoginCtrl = ({ show, onClose }) => {
       <div className="loginCtrl">
         <div className="loginCtrl__text">
           <img id="login" src={Login} alt="login" />
-          <h3>ROSA KANG</h3>
+          <h3>Chris Lee</h3>
           <button
             onClick={event => {
               onClose();
