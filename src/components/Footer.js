@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../assets/logo/cozny.png";
+import Logo from "../assets/logo/logo.png";
 import Insta from "../assets/icon/SVG/Icon-instagram.svg";
 import Facebook from "../assets/icon/SVG/Icon-facebook.svg";
 import { Link } from "react-router-dom";

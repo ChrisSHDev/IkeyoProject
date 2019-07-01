@@ -88,7 +88,7 @@
 .header__right--sub a {
   font-family: myDemi;
   text-decoration: none;
-  color: #afafaf;
+  color: #26073f;
 }
 
 .header__right--sub:hover {
@@ -195,7 +195,7 @@
 .slider h3 {
   font-family: myMedium;
   padding: 0px 16px;
-  color: #ffc20e;
+  color: #fff241;
   font-size: 17px;
 }
 
@@ -280,7 +280,7 @@
   margin: 0px;
   font-family: myMedium;
   font-size: 12px;
-  color: #ffc20e;
+  color: #fff241;
 }
 
 .journals__one a h4 {
@@ -289,7 +289,7 @@
   margin: 0px;
   padding: 10px 16px;
   font-family: Regular;
-  color: #aeaeae;
+  color: #26073f;
 }
 
 .journals__one a img {
@@ -521,7 +521,7 @@
 }
 
 .footer {
-  background-color: #323232;
+  background-color: #26073f;
   color: white;
   padding: 40px 0px;
 }
