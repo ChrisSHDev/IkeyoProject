@@ -1,1 +1,1 @@
-Live : https://ikeyo.herokuapp.com/
+Live : https://ikeyo.netlify.app
