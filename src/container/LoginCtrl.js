@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Login from "../assets/images/login.jpg";
+import Login from "../assets/images/profile.png";
 
 const LoginCtrl = ({ show, onClose }) => {
   {
